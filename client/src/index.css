@@ -1,0 +1,56 @@
+/* ---------- Defining Global Variables ---------- */
+
+:root {
+  --main-text-color: lightslategrey;
+  --sharp-font-weight: 300;
+  --margin-bottom-1: 1rem;
+  --margin-bottom-2: 2rem;
+  --margin-bottom-3: 3rem;
+}
+
+/* ---------- General Styles ---------- */
+.sharp-text {
+  font-weight: var(--sharp-font-weight);
+}
+
+.margin-bottom-1 {
+  margin-bottom: var(--margin-bottom-1);
+}
+
+.margin-bottom-2 {
+  margin-bottom: var(--margin-bottom-2);
+}
+
+.margin-bottom-3 {
+  margin-bottom: var(--margin-bottom-3);
+}
+
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  /* background: url("../src/assets/totalBG.jpg"); */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

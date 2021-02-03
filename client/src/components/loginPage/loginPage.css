@@ -1,0 +1,117 @@
+/* ---------- Main Login Section ---------- */
+
+.loginSection {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-25%);
+    position: relative;
+}
+
+.loginSquare {
+    width: 500px;
+    border: 1px solid rgba(119, 136, 153, 0.589);
+    border-radius: 10px;
+    text-align: center;
+    padding: 3rem;
+    color: lightslategray;
+    background: white;
+}
+
+
+
+/* ---------- 'Welcome' Logo ---------- */
+
+.login-logo {
+    width: 200px;
+}
+
+
+
+/* ---------- Input Fields Section ---------- */
+
+.inputFieldSection {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.cerdinals-fieldset {
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #00d1ff;
+    padding: 3px 10px 5px;
+    margin-bottom: 1rem;
+    box-shadow: -5px 5px 0px #01ffc4;
+}
+
+.cerdinals-fieldset legend {
+    text-align: left;
+    padding: 0 5px;
+    color: lightslategray;
+}
+
+.cerdinals-fieldset input {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    width: 200px;
+    background: transparent;
+}
+
+
+
+/* ---------- Login Button ---------- */
+
+.loginBtn {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    background: #00d1ff;
+    border-radius: 5px;
+    color: white;
+    padding: 4px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: -5px 5px 0px #01ffc4;
+    transition: 0.3s ease;
+}
+
+.loginBtn:hover {
+    transform: translateY(0.265rem);
+}
+
+
+
+/* ---------- Not Registered Link ---------- */
+
+.notRegisteredLink {
+    display: block;
+    color: rgb(30, 122, 214);
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.notRegisteredLink:visited {
+    color: rgb(30, 122, 214);
+}
+
+
+
+/* ---------- User's Message Line ---------- */
+.userMessagesParagraph {
+    position: absolute;
+    bottom: 1rem;
+    color: red;
+}
+
+
+
+
+/* ---------- Media Queries ---------- */
+
+@media screen and (max-width: 555px) {
+
+    .loginSquare {
+        width: 350px;
+    }
+}

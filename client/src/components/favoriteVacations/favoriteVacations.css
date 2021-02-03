@@ -1,0 +1,293 @@
+.favoriteVacationsSection {
+    width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+
+/* ---------- Favorite Vacations Section ---------- */
+
+.favoriteVacations {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.colorfulAstroidImg {
+    height: 65px;
+}
+
+.favoritesHeader {
+    display: flex;
+    align-items: center;
+    background: white;
+    box-shadow: -9px 8px 0px 0px #0cffe1;
+    padding: 12px 1rem;
+    border-radius: 5px;
+    color: lightslategray;
+    border: 1px solid lightslategray;
+    justify-content: center;
+    height: 80px;
+}
+
+.poundingHeartAnimation {
+    width: 45px;
+    margin-left: 1rem;
+}
+
+
+/* ---------- Vacation Card ---------- */
+
+.vacationCardContainer {
+    width: 350px;
+    border-radius: 3px;
+    margin-right: 25px;
+    background: white;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    box-shadow: 0px 0px 5px 6px #a5a5a582;
+}
+
+.vacationDesc {
+    padding: 1rem;
+    text-align: center;
+    color: lightslategray;
+    margin-bottom: 1rem;
+}
+
+.vacationLikeCardSection {
+    position: relative;
+    padding: 10px;
+    background: white;
+    text-align: center;
+}
+
+.vacationLikeCardSection button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.vacationCardImg {
+    width: 350px;
+    height: 250px;
+}
+
+.emptyHeart {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    animation: fave-heart 1s steps(28);
+}
+
+.emptyHeart:hover {
+    background-position: -2800px 0;
+    transition: background 1s steps(28);
+}
+
+@keyframes fave-heart {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2800px 0;
+    }
+}
+
+.fullHeart {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../../assets/heartAnimationImage.png") no-repeat;
+    background-position: 100% 100%;
+}
+
+.fullHeart:hover {
+    background-position: 0% 0%;
+}
+
+.heartIcon {
+    width: 25px;
+    display: block;
+    margin-right: auto;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.heartIcon:hover {
+    transform: scale(1.2) rotate(-35deg);
+}
+
+.dislike {
+    width: 26px;
+    display: block;
+    margin-right: auto;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.dislike:hover {
+    transform: rotateX(180deg);
+}
+
+.imgSection {
+    text-align: center;
+    margin-bottom: 10px;
+
+    height: 250px;
+    background-image: url("../../assets/emptyImgBG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 10px 0 #5a5a5a;
+}
+
+.vacationInfoCard {
+    background: url("../../assets//wavyCorner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 8px;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.vacationDates {
+    padding-bottom: 8px;
+}
+
+.vacationDate {
+    display: inline-block;
+}
+
+.vacationDates > h4 {
+    font-weight: 300;
+    color: lightslategray;
+}
+
+.resortName {
+    font-weight: 400;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+    color: #15304c;
+
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vacationPrice {
+    font-weight: 300;
+    color: #09a969;
+    font-size: 1.2rem;
+}
+
+.followersText {
+    color: #aab8c2;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.noFavoriteVacations {
+    margin: auto;
+}
+
+.noVacationsIMG {
+    width: 300px;
+}
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: rgb(21 48 76); /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 15px; /* Rounded borders */
+    padding: 25px 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+  
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 5.5s;
+}
+  
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+  
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+  
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+  
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+
+/* -------------------------- Media Queries -------------------------- */
+
+@media screen and (max-width: 1535px) {
+    
+    .favoriteVacationsSection {
+        width: 1300px;
+    }
+
+    .favoriteVacations {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1375px) {
+
+    .favoriteVacationsSection {
+        width: 100%;
+    }
+
+    .headerContainer {
+        margin: auto auto 3rem auto;
+    }
+}
+
+@media screen and (max-width: 895px) {
+
+    .favoriteVacationsSection {
+        margin: auto;
+    }
+}

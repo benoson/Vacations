@@ -1,0 +1,71 @@
+.topNavbar {
+    display: flex;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    transition: 0.5s ease;
+    z-index: 99;
+}
+
+.topNavItem {
+    align-items: center;
+    font-size: 19px;
+    color: white;
+    padding: 0 1rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.topNavItem:visited {
+    color: white;
+}
+
+.topNavIcon {
+    width: 35px;
+    margin-left: 1rem;
+}
+
+.helloUserSection {
+    font-size: 1.4rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+.loginStatusButton {
+    background-color: transparent;
+    font-size: 1.2rem;
+    justify-content: center;
+    min-width: 100px;
+    border-radius: 5px;
+    font-weight: 400;
+    color: blue;
+}
+
+#adminText {
+    margin-right: 1rem;
+    color: #15ab15;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.topNavbarSection {
+    margin-bottom: 4rem;
+}
+
+.topNavbarSection a {
+    text-decoration: none;
+    color: lightslategray;
+    background: white;
+    padding: 12px 1rem;
+    border-radius: 5px;
+    border: 1px solid lightslategray;
+}
+
+.reportsNavItem {
+    padding: 0;
+}

@@ -1,0 +1,13 @@
+.topBanner {
+    height: 200px;
+    margin: auto;
+    background-image: url("../../assets/wavy.png");
+    background-repeat: no-repeat;
+    box-shadow: 0px 2px 10px #00000059;
+    transform: rotateY(180deg);
+}
+
+.topBanner > h1 {
+    font-size: 4rem;
+    color: white;
+}

@@ -1,0 +1,13 @@
+.logoContainer {
+    margin: auto;
+    text-align: center;
+    background: url("../../assets/wavyCyan.png");   
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.logo {
+    height: 250px;
+    margin: 1rem;
+}
